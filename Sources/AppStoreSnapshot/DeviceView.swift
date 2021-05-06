@@ -10,6 +10,8 @@ import SwiftUI
 public struct DeviceView<Content: View>: View {
     private let content: Content
     private let device: DeviceConfiguration
+
+    @Environment(\.colorScheme) private var colorScheme
     
     public init(
         _ device: DeviceConfiguration,
@@ -31,9 +33,15 @@ public struct DeviceView<Content: View>: View {
                     height: (device.screenHeight * scale) + 2
                 )
 
-                Image(uiImage: device.frameImage)
-                    .resizable()
-                    .userInteractionDisabled()
+                ZStack {
+                    Image(uiImage: device.frameImage)
+                        .resizable()
+
+                    Image(uiImage: device.statusBarImage)
+                        .resizable()
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
+                }
+                .userInteractionDisabled()
             }
             .mask(Image(uiImage: device.maskImage).resizable())
         }

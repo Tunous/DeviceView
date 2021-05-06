@@ -10,17 +10,20 @@ import UIKit
 public struct DeviceConfiguration {
     public let maskImage: UIImage
     public let frameImage: UIImage
+    public let statusBarImage: UIImage
     public let screenWidth: CGFloat
     public let screenHeight: CGFloat
 
     public init(
         maskImage: UIImage,
         frameImage: UIImage,
+        statusBarImage: UIImage,
         screenWidth: CGFloat,
         screenHeight: CGFloat
     ) {
         self.maskImage = maskImage
         self.frameImage = frameImage
+        self.statusBarImage = statusBarImage
         self.screenWidth = screenWidth
         self.screenHeight = screenHeight
     }
@@ -28,6 +31,7 @@ public struct DeviceConfiguration {
     public static let iPhone12 = DeviceConfiguration(
         maskImage: UIImage(moduleImageNamed: "iPhone 12 - Mask")!,
         frameImage: UIImage(moduleImageNamed: "iPhone 12 - Frame")!,
+        statusBarImage: UIImage(moduleImageNamed: "iPhone 12 - Status Bar")!,
         screenWidth: 1170,
         screenHeight: 2532
     )
