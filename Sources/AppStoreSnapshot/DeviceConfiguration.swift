@@ -35,4 +35,12 @@ public struct DeviceConfiguration {
         screenWidth: 1170,
         screenHeight: 2532
     )
+
+    public static let iPhoneSE = DeviceConfiguration(
+        maskImage: UIImage(moduleImageNamed: "iPhone SE - Mask")!,
+        frameImage: UIImage(moduleImageNamed: "iPhone SE - Frame")!,
+        statusBarImage: UIImage(moduleImageNamed: "iPhone SE - Status Bar")!,
+        screenWidth: 1320,
+        screenHeight: 2346
+    )
 }

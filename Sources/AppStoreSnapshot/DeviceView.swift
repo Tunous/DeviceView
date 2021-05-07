@@ -50,16 +50,24 @@ public struct DeviceView<Content: View>: View {
 }
 
 struct DeviceView_Previews: PreviewProvider {
+    static let devices: [DeviceConfiguration] = [.iPhone12, .iPhoneSE]
     static var previews: some View {
         Group {
+            ForEach(devices.indices, id: \.self) { index in
+                DeviceView(devices[index]) {
+                    Color.blue
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+            }
+
             VStack {
                 Text("Top")
 
                 HStack {
                     Text("Left")
 
-                    DeviceView(.iPhone12) {
-                        Text("This is content inside iPhone 12")
+                    DeviceView(.iPhoneSE) {
+                        Text("This is content inside iPhone")
                             .multilineTextAlignment(.center)
                             .padding()
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
