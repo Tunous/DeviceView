@@ -10,15 +10,21 @@ import SwiftUI
 public struct DeviceView<Content: View>: View {
     private let content: Content
     private let device: DeviceConfiguration
+    private let allowUserInteraction: Bool
+    private let aspectRatioContentMode: ContentMode
 
     @Environment(\.colorScheme) private var colorScheme
     
     public init(
         _ device: DeviceConfiguration,
+        allowUserInteraction: Bool = false,
+        aspectRatioContentMode: ContentMode = .fit,
         @ViewBuilder content: () -> Content
     ) {
         self.device = device
         self.content = content()
+        self.allowUserInteraction = allowUserInteraction
+        self.aspectRatioContentMode = aspectRatioContentMode
     }
     
     public var body: some View {
@@ -41,11 +47,11 @@ public struct DeviceView<Content: View>: View {
                         .resizable()
                         .foregroundColor(colorScheme == .dark ? .white : .black)
                 }
-                .userInteractionDisabled()
+                .userInteractionDisabled(allowUserInteraction)
             }
             .mask(Image(uiImage: device.maskImage).resizable())
         }
-        .aspectRatio(device.frameImage.size.aspectRatio, contentMode: .fit)
+        .aspectRatio(device.frameImage.size.aspectRatio, contentMode: aspectRatioContentMode)
     }
 }
 

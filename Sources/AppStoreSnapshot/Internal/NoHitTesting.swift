@@ -17,8 +17,13 @@ struct NoHitTesting: ViewModifier {
 }
 
 extension View {
-    func userInteractionDisabled() -> some View {
-        self.modifier(NoHitTesting())
+    @ViewBuilder
+    func userInteractionDisabled(_ disabled: Bool = true) -> some View {
+        if disabled {
+            self.modifier(NoHitTesting())
+        } else {
+            self
+        }
     }
 }
 
