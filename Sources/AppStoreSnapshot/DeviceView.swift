@@ -56,7 +56,7 @@ public struct DeviceView<Content: View>: View {
 }
 
 struct DeviceView_Previews: PreviewProvider {
-    static let devices: [DeviceConfiguration] = [.iPhone12, .iPhoneSE]
+    static let devices: [DeviceConfiguration] = [.iPhone12, .iPhoneSE, .iPadPro]
     static var previews: some View {
         Group {
             ForEach(devices.indices, id: \.self) { index in

@@ -43,4 +43,12 @@ public struct DeviceConfiguration {
         screenWidth: 1320,
         screenHeight: 2346
     )
+
+    public static let iPadPro = DeviceConfiguration(
+        maskImage: UIImage(moduleImageNamed: "12.9-inch iPad Pro - Mask")!,
+        frameImage: UIImage(moduleImageNamed: "12.9-inch iPad Pro - Frame")!,
+        statusBarImage: UIImage(moduleImageNamed: "12.9-inch iPad Pro - Status Bar")!,
+        screenWidth: 2542,
+        screenHeight: 3391
+    )
 }
