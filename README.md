@@ -1,3 +1,3 @@
-# AppStoreSnapshot
+# DeviceView
 
-A description of this package.
+A swift library for creating views which appear inside of iPhone device frames.
