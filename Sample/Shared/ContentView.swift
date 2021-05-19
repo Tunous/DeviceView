@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppStoreSnapshot
+import DeviceView
 
 struct ContentView: View {
     var body: some View {

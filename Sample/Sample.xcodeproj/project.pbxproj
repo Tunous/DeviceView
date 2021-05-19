@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233CC8A5265527FC00DF2B87 /* DeviceView in Frameworks */ = {isa = PBXBuildFile; productRef = 233CC8A4265527FC00DF2B87 /* DeviceView */; };
 		2356293A26430BC1005836A5 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356292726430BC0005836A5 /* SampleApp.swift */; };
 		2356293B26430BC1005836A5 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356292726430BC0005836A5 /* SampleApp.swift */; };
 		2356293C26430BC1005836A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356292826430BC0005836A5 /* ContentView.swift */; };
 		2356293D26430BC1005836A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356292826430BC0005836A5 /* ContentView.swift */; };
 		2356293E26430BC1005836A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2356292926430BC1005836A5 /* Assets.xcassets */; };
 		2356293F26430BC1005836A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2356292926430BC1005836A5 /* Assets.xcassets */; };
-		2356294F26430BE1005836A5 /* AppStoreSnapshot in Frameworks */ = {isa = PBXBuildFile; productRef = 2356294E26430BE1005836A5 /* AppStoreSnapshot */; };
 		2356295926430E8D005836A5 /* DeviceContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356295826430E8D005836A5 /* DeviceContentView.swift */; };
 		2356295A26430E8D005836A5 /* DeviceContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356295826430E8D005836A5 /* DeviceContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		233CC8A1265527F200DF2B87 /* DeviceView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DeviceView; path = ..; sourceTree = "<group>"; };
 		2356292726430BC0005836A5 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		2356292826430BC0005836A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2356292926430BC1005836A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		2356293626430BC1005836A5 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2356293826430BC1005836A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2356293926430BC1005836A5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		2356294A26430BD4005836A5 /* AppStoreSnapshot */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppStoreSnapshot; path = ..; sourceTree = "<group>"; };
 		2356295826430E8D005836A5 /* DeviceContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2356294F26430BE1005836A5 /* AppStoreSnapshot in Frameworks */,
+				233CC8A5265527FC00DF2B87 /* DeviceView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 		2356292126430BC0005836A5 = {
 			isa = PBXGroup;
 			children = (
-				2356294A26430BD4005836A5 /* AppStoreSnapshot */,
+				233CC8A1265527F200DF2B87 /* DeviceView */,
 				2356292626430BC0005836A5 /* Shared */,
 				2356293026430BC1005836A5 /* iOS */,
 				2356293726430BC1005836A5 /* macOS */,
@@ -123,7 +123,7 @@
 			);
 			name = "Sample (iOS)";
 			packageProductDependencies = (
-				2356294E26430BE1005836A5 /* AppStoreSnapshot */,
+				233CC8A4265527FC00DF2B87 /* DeviceView */,
 			);
 			productName = "Sample (iOS)";
 			productReference = 2356292E26430BC1005836A5 /* Sample.app */;
@@ -462,9 +462,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2356294E26430BE1005836A5 /* AppStoreSnapshot */ = {
+		233CC8A4265527FC00DF2B87 /* DeviceView */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AppStoreSnapshot;
+			productName = DeviceView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

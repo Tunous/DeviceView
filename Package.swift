@@ -4,21 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppStoreSnapshot",
+    name: "DeviceView",
     platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "AppStoreSnapshot",
-            targets: ["AppStoreSnapshot"]),
+            name: "DeviceView",
+            targets: ["DeviceView"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "AppStoreSnapshot",
+            name: "DeviceView",
             dependencies: []),
         .testTarget(
-            name: "AppStoreSnapshotTests",
-            dependencies: ["AppStoreSnapshot"]),
+            name: "DeviceViewTests",
+            dependencies: ["DeviceView"]),
     ]
 )
